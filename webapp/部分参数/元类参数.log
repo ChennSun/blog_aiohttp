@@ -1,0 +1,30 @@
+cls:<class '__main__.ModelMetaclass'>,
+name:Model,
+bases:(<class 'dict'>,),
+attrs:{'__module__': '__main__', '__qualname__': 'Model', '__init__': <function Model.__init__ at 0x026ED930>, '__getattr__': <function Model.__getattr__ at 0x026ED978>, '__setattr__': <function Model.__setattr__ at 0x026ED9C0>, 'getValue': <function Model.getValue at 0x026EDA08>, 'getValueOrDefault': <function Model.getValueOrDefault at 0x026EDA50>, 'find_all': <classmethod object at 0x026E0C10>, 'findNumber': <classmethod object at 0x026E0C90>, 'find': <classmethod object at 0x026E0CB0>, 'findAll': <classmethod object at 0x026E0CD0>, 'save': <function Model.save at 0x026EDBB8>, 'update': <function Model.update at 0x026EDC00>, 'delete': <function Model.delete at 0x026EDC48>, '__classcell__': <cell at 0x026E0BD0: empty>}
+
+cls:<class '__main__.ModelMetaclass'>,
+name:User2,
+bases:(<class '__main__.Model'>,),
+attrs:{'__module__': '__main__', '__qualname__': 'User2', 'id': <__main__.IntegerField object at 0x026E0C70>, 'name': <__main__.StringField object at 0x026E0D30>, 'email': <__main__.StringField object at 0x026E0D50>, 'password': <__main__.StringField object at 0x026E0D10>}
+
+
+found table: User2 (table: User2) 
+__module__,
+__main__
+__qualname__,
+User2
+id,
+<IntegerField , id , int>
+Found mapping id===><IntegerField , id , int>
+fond primary key id
+name,
+<StringField , name , varchar(100)>
+Found mapping name===><StringField , name , varchar(100)>
+email,
+<StringField , email , varchar(100)>
+Found mapping email===><StringField , email , varchar(100)>
+password,
+<StringField , password , varchar(100)>
+Found mapping password===><StringField , password , varchar(100)>
+ start creating database connection pool

@@ -1,0 +1,135 @@
+ALLUSERSPROFILE : C:\ProgramData
+APPDATA : C:\Users\sun\AppData\Roaming
+COMMONPROGRAMFILES : C:\Program Files\Common Files
+COMPUTERNAME : SUN-PC
+COMSPEC : C:\Windows\system32\cmd.exe
+FP_NO_HOST_CHECK : NO
+HOMEDRIVE : C:
+HOMEPATH : \Users\sun
+LOCALAPPDATA : C:\Users\sun\AppData\Local
+LOGONSERVER : \\SUN-PC
+NUMBER_OF_PROCESSORS : 4
+OS : Windows_NT
+PATH : %SystemRoot%\system32\WindowsPowerShell\v1.0\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\
+System32\WindowsPowerShell\v1.0\;C:\Program Files\AMD\ATI.ACE\Core-Static;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:
+\Program Files\MySQL\MySQL Server 5.6\bin;F:\Git\cmd;C:\Users\sun\AppData\Local\Programs\Python\Python36-32\Scripts\;C:\
+Users\sun\AppData\Local\Programs\Python\Python36-32\
+PATHEXT : .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+PROCESSOR_ARCHITECTURE : x86
+PROCESSOR_IDENTIFIER : x86 Family 6 Model 58 Stepping 9, GenuineIntel
+PROCESSOR_LEVEL : 6
+PROCESSOR_REVISION : 3a09
+PROGRAMDATA : C:\ProgramData
+PROGRAMFILES : C:\Program Files
+PSMODULEPATH : C:\Users\sun\Documents\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules\
+PUBLIC : C:\Users\Public
+SESSIONNAME : Console
+SYSTEMDRIVE : C:
+SYSTEMROOT : C:\Windows
+TEMP : C:\Users\sun\AppData\Local\Temp
+TMP : C:\Users\sun\AppData\Local\Temp
+USERDOMAIN : sun-PC
+USERNAME : sun
+USERPROFILE : C:\Users\sun
+WINDIR : C:\Windows
+WINDOWS_TRACING_FLAGS : 3
+WINDOWS_TRACING_LOGFILE : C:\BVTBin\Tests\installpackage\csilogfile.log
+SERVER_NAME : sun-PC
+GATEWAY_INTERFACE : CGI/1.1
+SERVER_PORT : 8000
+REMOTE_HOST :
+CONTENT_LENGTH :
+SCRIPT_NAME :
+SERVER_PROTOCOL : HTTP/1.1
+SERVER_SOFTWARE : WSGIServer/0.2
+REQUEST_METHOD : GET
+PATH_INFO : /
+QUERY_STRING :
+REMOTE_ADDR : 127.0.0.1
+CONTENT_TYPE : text/plain
+HTTP_HOST : localhost:8000
+HTTP_CONNECTION : keep-alive
+HTTP_CACHE_CONTROL : max-age=0
+HTTP_UPGRADE_INSECURE_REQUESTS : 1
+HTTP_USER_AGENT : Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+HTTP_ACCEPT : text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+HTTP_ACCEPT_ENCODING : gzip, deflate, br
+HTTP_ACCEPT_LANGUAGE : zh-CN,zh;q=0.9
+wsgi.input : <_io.BufferedReader name=572>
+wsgi.errors : <_io.TextIOWrapper name='<stderr>' mode='w' encoding='utf-8'>
+wsgi.version : (1, 0)
+wsgi.run_once : False
+wsgi.url_scheme : http
+wsgi.multithread : True
+wsgi.multiprocess : False
+wsgi.file_wrapper : <class 'wsgiref.util.FileWrapper'>
+127.0.0.1 - - [20/Nov/2018 14:24:35] "GET / HTTP/1.1" 200 19
+ALLUSERSPROFILE : C:\ProgramData
+APPDATA : C:\Users\sun\AppData\Roaming
+COMMONPROGRAMFILES : C:\Program Files\Common Files
+COMPUTERNAME : SUN-PC
+COMSPEC : C:\Windows\system32\cmd.exe
+FP_NO_HOST_CHECK : NO
+HOMEDRIVE : C:
+HOMEPATH : \Users\sun
+LOCALAPPDATA : C:\Users\sun\AppData\Local
+LOGONSERVER : \\SUN-PC
+NUMBER_OF_PROCESSORS : 4
+OS : Windows_NT
+PATH : %SystemRoot%\system32\WindowsPowerShell\v1.0\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\
+System32\WindowsPowerShell\v1.0\;C:\Program Files\AMD\ATI.ACE\Core-Static;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:
+\Program Files\MySQL\MySQL Server 5.6\bin;F:\Git\cmd;C:\Users\sun\AppData\Local\Programs\Python\Python36-32\Scripts\;C:\
+Users\sun\AppData\Local\Programs\Python\Python36-32\
+PATHEXT : .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+PROCESSOR_ARCHITECTURE : x86
+PROCESSOR_IDENTIFIER : x86 Family 6 Model 58 Stepping 9, GenuineIntel
+PROCESSOR_LEVEL : 6
+PROCESSOR_REVISION : 3a09
+PROGRAMDATA : C:\ProgramData
+PROGRAMFILES : C:\Program Files
+PSMODULEPATH : C:\Users\sun\Documents\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules\
+PUBLIC : C:\Users\Public
+SESSIONNAME : Console
+SYSTEMDRIVE : C:
+SYSTEMROOT : C:\Windows
+TEMP : C:\Users\sun\AppData\Local\Temp
+TMP : C:\Users\sun\AppData\Local\Temp
+USERDOMAIN : sun-PC
+USERNAME : sun
+USERPROFILE : C:\Users\sun
+WINDIR : C:\Windows
+WINDOWS_TRACING_FLAGS : 3
+WINDOWS_TRACING_LOGFILE : C:\BVTBin\Tests\installpackage\csilogfile.log
+SERVER_NAME : sun-PC
+GATEWAY_INTERFACE : CGI/1.1
+SERVER_PORT : 8000
+REMOTE_HOST :
+CONTENT_LENGTH :
+SCRIPT_NAME :
+SERVER_PROTOCOL : HTTP/1.1
+SERVER_SOFTWARE : WSGIServer/0.2
+REQUEST_METHOD : GET
+PATH_INFO : /favicon.ico
+QUERY_STRING :
+REMOTE_ADDR : 127.0.0.1
+CONTENT_TYPE : text/plain
+HTTP_HOST : localhost:8000
+HTTP_CONNECTION : keep-alive
+HTTP_PRAGMA : no-cache
+HTTP_CACHE_CONTROL : no-cache
+HTTP_USER_AGENT : Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+HTTP_ACCEPT : image/webp,image/apng,image/*,*/*;q=0.8
+HTTP_REFERER : http://localhost:8000/
+HTTP_ACCEPT_ENCODING : gzip, deflate, br
+HTTP_ACCEPT_LANGUAGE : zh-CN,zh;q=0.9
+wsgi.input : <_io.BufferedReader name=572>
+wsgi.errors : <_io.TextIOWrapper name='<stderr>' mode='w' encoding='utf-8'>
+wsgi.version : (1, 0)
+wsgi.run_once : False
+wsgi.url_scheme : http
+wsgi.multithread : True
+wsgi.multiprocess : False
+wsgi.file_wrapper : <class 'wsgiref.util.FileWrapper'>
+127.0.0.1 - - [20/Nov/2018 14:24:35] "GET /favicon.ico HTTP/1.1" 200 19
