@@ -159,7 +159,7 @@ def api_get_users():
 		u.passwd="*********"
 	return dict(users=users)
 
-@get("/blog/{id}")#打开对应id的blog，简单点说就是打开一篇文章
+@get("/blog/{id}")
 def get_blog(id):
 	blog = yield from Blog.find(id)
 	comments = yield from Comment.findAll("blog_id=?",[id],orderBy="created_at desc")
@@ -169,11 +169,11 @@ def get_blog(id):
 	return {
 	"__template__":"blog.html",
 	"blog":blog,
-	"comments":comments#模板内无comment传入位置，存疑
+	"comments":comments
 	}
 
 @get("/manage/blogs")#管理员管理博客列表
-def manage_blogs(*,page='1'):#page为什么不直接传入int型？
+def manage_blogs(*,page='1'):
 	return {
 	"__template__":"manage_blogs.html",
 	"page_index":get_page_index(page)
@@ -184,7 +184,7 @@ def manage_create_blog():
 	return{
 	"__template__":"manage_blog_edit.html",
 	"id":'',
-	"action":"api/blogs"
+	"action":"/api/blogs"
 	}
 
 @get("/manage/blogs/edit")
@@ -194,22 +194,6 @@ def manage_edit_blog(*,id):
 	"id":id,
 	"action":"/api/blogs/%s"%id
 	}
-
-@post("/api/blogs/{id}")
-def api_update_blog(id,request,*,name,summary,content):
-	check_admin(request)
-	blog = yield from Blog.find(id)
-	if not name or not name.strip():
-		raise APIValueError("name","name cannot be empty.")
-	if not summary or not summary.strip():
-		raise APIValueError("summary","summary cannot be empty.")
-	if not content or not content.strip():
-		raise APIValueError("content","content cannot be empty.")
-	blog.name=name.strip()
-	blog.summary=summary.strip()
-	blog.content=content.strip()
-	yield from blog.update()
-	return blog
 
 @get("/api/blogs")#获取日志列表
 def api_blogs(*,page="1"):
@@ -227,7 +211,7 @@ def api_get_blog(*,id):
 	return blog
 
 @post("/api/blogs")#保存blog
-def api_create_blog(request,*,name,summary,comment):
+def api_create_blog(request,*,name,summary,content):
 	check_admin(request)
 	if not name or not name.strip():
 		raise APIValueError("name","name cannot be empty")
@@ -235,8 +219,24 @@ def api_create_blog(request,*,name,summary,comment):
 		raise APIValueError("summary","summary cannot be empty")
 	if not content or not content.strip():
 		raise APIValueError("content","content cannot be empty")
-	blog=Blog(user_id=request.__user__.id,user_name=request.__user__.name,user_image=requset.__user__.image,name=name.strip(),summary=summary.strip(),content=content.strip())
+	blog=Blog(user_id=request.__user__.id,user_name=request.__user__.name,user_image=request.__user__.image,name=name.strip(),summary=summary.strip(),content=content.strip())
 	yield from blog.save()
+	return blog
+	
+@post("/api/blogs/{id}")
+def api_update_blog(id,request,*,name,summary,content):
+	check_admin(request)
+	blog = yield from Blog.find(id)
+	if not name or not name.strip():
+		raise APIValueError("name","name cannot be empty.")
+	if not summary or not summary.strip():
+		raise APIValueError("summary","summary cannot be empty.")
+	if not content or not content.strip():
+		raise APIValueError("content","content cannot be empty.")
+	blog.name=name.strip()
+	blog.summary=summary.strip()
+	blog.content=content.strip()
+	yield from blog.update()
 	return blog
 
 @get("/manage/")

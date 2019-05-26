@@ -113,7 +113,7 @@ class RequestHandler(object):
             kw["request"] = request
         if self._required_kw_args:
             for name in self._required_kw_args:
-                if not name in kw:#若name不在KW中
+                if name not in kw:#若name不在KW中
                     return web.HTTPBadRequest("Missing arguments:%s"%name)
         logging.info("call with args:%s"%str(kw))
         try:
